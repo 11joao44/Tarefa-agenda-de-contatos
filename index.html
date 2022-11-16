@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/main.css">
+    <title>Agenda de Contatos</title>
+</head>
+<body>
+<div class="container">
+    <header>
+        <img src="/img/contatos.png" alt="agenda de contatos">
+        <h1>Agenda de Contatos</h1>
+    </header>
+    <form id="form-contato">
+            <div>
+                <label for="nome-contato" class="nome"></label>
+                <input type="text" required class="input" id="nome-contato" placeholder="Nome">
+                <p class="errorname">Contato já existente</p>
+            </div>
+
+            <div>
+                <label for="telefone-contato" class="telefone"></label>
+                <input type="number" required class="input" id="telefone-contato" placeholder="Telefone">
+                <p class="errortel">Número está incorreto</p>
+            </div>
+            <div>
+                <button type="submit" id="button">Adicionar</button>
+                <p class="errortel">...</p>
+            </div>
+    </form>
+    <br>
+    <table>
+        <thead>
+            <tr>
+                <th id='ID'>ID</th>
+                <th>Nome</th>
+                <th>Telefone</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+        <tfoot>
+        </tfoot>
+    </table>
+</div>
+    <script src="/main.js"></script>
+</body>
+</html>
